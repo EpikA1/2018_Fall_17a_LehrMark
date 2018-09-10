@@ -13,9 +13,9 @@ CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/doublepointerobject
-OUTPUT_BASENAME=doublepointerobject
-PACKAGE_TOP_DIR=doublepointerobject/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/dynamicdoublepointerobject_duetoconstructor
+OUTPUT_BASENAME=dynamicdoublepointerobject_duetoconstructor
+PACKAGE_TOP_DIR=dynamicdoublepointerobjectduetoconstructor/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/doublepointerobject/bin"
+makeDirectory "${NBTMPDIR}/dynamicdoublepointerobjectduetoconstructor/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/doublepointerobject.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/dynamicdoublepointerobjectduetoconstructor.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/doublepointerobject.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/dynamicdoublepointerobjectduetoconstructor.tar *
 checkReturnCode
 
 # Cleanup

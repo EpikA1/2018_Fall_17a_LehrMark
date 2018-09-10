@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=DoublePointerObject
+PROJECTNAME=DynamicSinglePointerObject_NoConstructor
 
 # Active Configuration
 DEFAULTCONF=Debug

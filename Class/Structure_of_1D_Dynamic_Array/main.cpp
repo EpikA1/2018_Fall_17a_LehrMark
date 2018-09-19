@@ -54,7 +54,7 @@ int *fill1D(int n){
 DynAry1 *filStrc(int *a,int n){
     DynAry1 *d1=new DynAry1;
     d1->size=n;
-    d1->array=a;
+    (*d1).array=a;
     return d1;
 }
 
